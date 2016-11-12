@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd0921f9-e533-426f-a519-7b07f658a72e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/dictionaries/Gabriela_Barrera.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/libraries/jcalendar_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/libraries/jpl.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/libraries/synthetica.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/libraries/syntheticaAluOxide.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/JProlog_Viajes.eml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/JProlog_Viajes.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/JProlog_Viajes.userlibraries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/distancia.pl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/img/travel.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/modelo/Prolog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelo/Prolog.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelExperto.class" afterPath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelExperto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelUsuario$1.class" afterPath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelUsuario$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelUsuario$2.class" afterPath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelUsuario$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelUsuario.class" afterPath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelUsuario.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelViaje.class" afterPath="$PROJECT_DIR$/out/production/JProlog_Viajes/vista/PanelViaje.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JProlog_Viajes.eml" afterPath="$PROJECT_DIR$/JProlog_Viajes.eml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JProlog_Viajes.userlibraries" afterPath="$PROJECT_DIR$/JProlog_Viajes.userlibraries" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modelo/Test.java" afterPath="$PROJECT_DIR$/src/modelo/Test.java" />
-    </list>
+    <list default="true" id="fd0921f9-e533-426f-a519-7b07f658a72e" name="Default" comment="" />
     <ignored path="JProlog_Viajes.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -123,10 +88,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1592" />
+    <option name="x" value="-8" />
     <option name="y" value="22" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1616" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -686,7 +651,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="22" width="1382" height="754" extended-state="0" />
+    <frame x="-8" y="22" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -700,7 +665,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17749244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1508344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
