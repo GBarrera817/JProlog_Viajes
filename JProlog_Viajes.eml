@@ -3,4 +3,16 @@
 	<output-test url="file://$MODULE_DIR$/out/test/JProlog_Viajes"/>
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="jcalendar-1.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/jcalendar-1.4.jar!/"/>
+	</lib>
+	<lib name="jpl.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/jpl.jar!/"/>
+	</lib>
+	<lib name="synthetica.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/synthetica.jar!/"/>
+	</lib>
+	<lib name="syntheticaAluOxide.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/syntheticaAluOxide.jar!/"/>
+	</lib>
 </component>
