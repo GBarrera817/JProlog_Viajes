@@ -7,6 +7,7 @@
 import de.javasoft.plaf.synthetica.SyntheticaAluOxideLookAndFeel;
 import vista.PanelExperto;
 import vista.PanelViaje;
+import vista.PanelUsuario;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,7 +19,7 @@ public class Test extends JFrame{
 	private String[] datosDestino = {"El penon", "Guachalalume", "Altovalsol", "Las Rojas"};
 	
 	private JTabbedPane tabbedPane;
-	private JPanel panelUsuario;
+	private PanelUsuario panelUsuario;
 	private PanelExperto panelExperto;
 	private JLabel lblDistanciaEntreLas;
 	private JLabel lblOrigen;
@@ -48,11 +49,12 @@ public class Test extends JFrame{
 		tabbedPane = new JTabbedPane(JTabbedPane.BOTTOM);
 		getContentPane().add(tabbedPane, BorderLayout.CENTER);
 		
-		panelUsuario = new JPanel();
+		panelUsuario = new PanelUsuario();
 		tabbedPane.addTab("Distancia ciudades", null, panelUsuario, "Permite al usuario calcular la distancia entre las cuidades");
 		tabbedPane.setEnabledAt(0, true);
-		panelUsuario.setLayout(null);
 		
+		/*
+		panelUsuario.setLayout(null);
 		lblDistanciaEntreLas = new JLabel("Distancia entre las ciudades vecinas");
 		lblDistanciaEntreLas.setHorizontalAlignment(SwingConstants.CENTER);
 		lblDistanciaEntreLas.setFont(new Font("Segoe WP Black", Font.PLAIN, 18));
@@ -129,11 +131,11 @@ public class Test extends JFrame{
 			}
 		});
 		listaDestino.setSelectedIndex(0);
-		
+		*/
 			
-			panelViajes = new PanelViaje();
-			tabbedPane.addTab("Planificador de viajes", null, panelViajes, null);
-			panelViajes.setLayout(null);
+		panelViajes = new PanelViaje();
+		tabbedPane.addTab("Planificador de viajes", null, panelViajes, null);
+		panelViajes.setLayout(null);
 		
 		panelExperto = new PanelExperto();
 		tabbedPane.addTab("M\u00F3dulo experto", null, panelExperto, "Permite al usuario experto crear la base de conocimiento para el sistema experto");
