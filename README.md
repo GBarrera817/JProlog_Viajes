@@ -49,4 +49,5 @@ Preparando el ambiente de desarrollo Prolog-Java:
 Funcionamiento del sistema
 
 	Para ejecutar el sistema se deben cargar los hechos y las reglas hechas en prolog, especificamente los
-	archivos "distancia_ls.pl" y "planificador_de_viajes_ls.pl" ademas de cargar el listado de localidades a visitar en "localidades.map".
+	archivos "distancia_ls.pl" y "planificador_de_viajes_ls.pl" ademas de cargar el listado de localidades 
+	a visitar en "localidades.map".
