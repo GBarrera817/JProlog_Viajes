@@ -6,7 +6,9 @@
 		<testFolder url="file://$MODULE_DIR$/Pruebas"/>
 	</contentEntry>
 	<levels>
-		<level name="jpl" value="project"/>
 		<level name="jcalendar-1.4" value="project"/>
+		<level name="jpl " value="project"/>
+		<level name="synthetica " value="project"/>
+		<level name="syntheticaAluOxide " value="project"/>
 	</levels>
 </component>

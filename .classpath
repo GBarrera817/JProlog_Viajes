@@ -4,9 +4,11 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path=""/>
 	<classpathentry kind="src" path="Pruebas"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/jpl"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/jcalendar-1.4"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/synthetica"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/syntheticaAluOxide"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jcalendar-1.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jpl "/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/synthetica "/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/syntheticaAluOxide "/>
 	<classpathentry kind="output" path="out/production/JProlog_Viajes"/>
 </classpath>
