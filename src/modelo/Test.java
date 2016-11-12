@@ -1,4 +1,4 @@
-/**
+package modelo; /**
  * Creado por Gabriela Barrera el 09-11-2016.
  * Proyecto: JProlog_Viajes
  */
