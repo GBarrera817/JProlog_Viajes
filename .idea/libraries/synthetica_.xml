@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="synthetica">
+  <library name="synthetica ">
     <CLASSES>
-      <root url="jar://D:/Java/Libs/Synthetica LookAndFeel/synthetica.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/synthetica.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
