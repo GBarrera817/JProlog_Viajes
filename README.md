@@ -12,7 +12,8 @@ El planificador de viajes tiene 3 módulos:
 							variables se encuentran el destino, tipo de alojamiento y numero de dias. Ademas se 
 							puede obtener información sobre el costo de los pasajes a determinada localidad.
 							
-	- Distancia Vecinos: Este módulo comprueba si las localidades son vecinas (que estan conectadas directamente o a lo más por un vecino).
+	- Distancia Vecinos: Este módulo comprueba si las localidades son vecinas (que estan conectadas directamente
+						 o a lo más por un vecino).
 						 y entrega la distancia entre estas.
 	- Experto: En este modulo se pueden agregar, editar y eliminar reglas para este sistema. 
 
@@ -47,5 +48,5 @@ Preparando el ambiente de desarrollo Prolog-Java:
 	 
 Funcionamiento del sistema
 
-	Para ejecutar el sistema se deben cargar los hechos y las reglas hechas en prolog, especificamente los archivos
-	"distancia_ls.pl" y "planificador_de_viajes_ls.pl" ademas de cargar el listado de localidades a visitar en "localidades.map".
+	Para ejecutar el sistema se deben cargar los hechos y las reglas hechas en prolog, especificamente los
+	archivos "distancia_ls.pl" y "planificador_de_viajes_ls.pl" ademas de cargar el listado de localidades a visitar en "localidades.map".
