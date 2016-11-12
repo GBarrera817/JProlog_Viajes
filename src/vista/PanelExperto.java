@@ -1,7 +1,7 @@
 package vista;
 
 import javax.swing.*;
-import java.awt.Font;
+import java.awt.*;
 
 /**
  * Creado por Gabriela Barrera el 10-11-2016.
@@ -30,11 +30,11 @@ public class PanelExperto extends JPanel {
 	private JLabel lblAgregarLocalidad;
 	private JLabel lblLocalidadDeOrigen;
 	private JTextField textField_5;
-	private JLabel lblTipo;
 	private JComboBox comboBox;
 	private JButton button_1;
 	private JLabel lblPrecio_1;
 	private JTextField textField_6;
+	private JLabel lblNewLabel;
 	
 	
 	public PanelExperto() {
@@ -47,120 +47,142 @@ public class PanelExperto extends JPanel {
 		
 		lblMduloExperto = new JLabel("M\u00F3dulo Experto");
 		lblMduloExperto.setHorizontalAlignment(SwingConstants.CENTER);
-		lblMduloExperto.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblMduloExperto.setBounds(319, 27, 186, 20);
+		lblMduloExperto.setFont(new Font("Segoe UI", Font.BOLD, 20));
+		lblMduloExperto.setBounds(319, 11, 186, 27);
 		add(lblMduloExperto);
 		
 		lblDistancia = new JLabel("Agregar distancia: ");
-		lblDistancia.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblDistancia.setBounds(37, 59, 146, 17);
+		lblDistancia.setFont(new Font("Segoe UI", Font.BOLD, 13));
+		lblDistancia.setBounds(37, 76, 129, 17);
 		add(lblDistancia);
 		
 		textField = new JTextField();
-		textField.setBounds(148, 93, 88, 20);
+		this.textField.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		textField.setBounds(165, 111, 102, 20);
 		add(textField);
 		textField.setColumns(10);
 		
 		lblOrigen = new JLabel("Localidad de origen:");
-		lblOrigen.setBounds(36, 96, 102, 14);
+		this.lblOrigen.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		lblOrigen.setBounds(36, 113, 119, 14);
 		add(lblOrigen);
 		
 		lblDestino = new JLabel("Localidad de destino: ");
-		lblDestino.setBounds(246, 96, 105, 14);
+		this.lblDestino.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		lblDestino.setBounds(37, 138, 118, 14);
 		add(lblDestino);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(361, 93, 86, 20);
+		this.textField_1.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		textField_1.setBounds(165, 135, 102, 20);
 		add(textField_1);
 		textField_1.setColumns(10);
 		
 		lblDistancia_1 = new JLabel("Distancia: ");
-		lblDistancia_1.setBounds(469, 96, 64, 14);
+		this.lblDistancia_1.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		lblDistancia_1.setBounds(37, 163, 63, 14);
 		add(lblDistancia_1);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(532, 93, 86, 20);
+		this.textField_2.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		textField_2.setBounds(165, 161, 102, 20);
 		add(textField_2);
 		textField_2.setColumns(10);
 		
 		lblKm = new JLabel("km");
-		lblKm.setBounds(628, 96, 46, 14);
+		this.lblKm.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		lblKm.setBounds(277, 164, 33, 14);
 		add(lblKm);
 		
 		btnAgregarHecho = new JButton("Agregar hecho");
-		btnAgregarHecho.setBounds(672, 92, 117, 23);
+		this.btnAgregarHecho.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btnAgregarHecho.setBounds(97, 198, 117, 23);
 		add(btnAgregarHecho);
 		
 		separator = new JSeparator();
-		separator.setBounds(10, 149, 779, 2);
+		this.separator.setOrientation(SwingConstants.VERTICAL);
+		separator.setBounds(302, 76, 8, 202);
 		add(separator);
 		
 		lblAgregarPasajes = new JLabel("Agregar pasajes: ");
-		lblAgregarPasajes.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblAgregarPasajes.setBounds(37, 176, 146, 17);
+		lblAgregarPasajes.setFont(new Font("Segoe UI", Font.BOLD, 13));
+		lblAgregarPasajes.setBounds(319, 75, 118, 17);
 		add(lblAgregarPasajes);
 		
 		lblLocalidadDeOrigen_1 = new JLabel("Localidad de origen:");
-		lblLocalidadDeOrigen_1.setBounds(36, 224, 102, 14);
+		this.lblLocalidadDeOrigen_1.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		lblLocalidadDeOrigen_1.setBounds(319, 111, 118, 14);
 		add(lblLocalidadDeOrigen_1);
 		
 		textField_3 = new JTextField();
+		this.textField_3.setFont(new Font("Segoe UI", Font.PLAIN, 11));
 		textField_3.setColumns(10);
-		textField_3.setBounds(148, 221, 105, 20);
+		textField_3.setBounds(439, 107, 105, 20);
 		add(textField_3);
 		
 		lblPrecio = new JLabel("Precio: $");
-		lblPrecio.setBounds(263, 224, 53, 14);
+		this.lblPrecio.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		lblPrecio.setBounds(319, 139, 53, 14);
 		add(lblPrecio);
 		
 		textField_4 = new JTextField();
+		this.textField_4.setFont(new Font("Segoe UI", Font.PLAIN, 11));
 		textField_4.setColumns(10);
-		textField_4.setBounds(326, 221, 86, 20);
+		textField_4.setBounds(439, 136, 105, 20);
 		add(textField_4);
 		
 		button = new JButton("Agregar hecho");
-		button.setBounds(672, 220, 117, 23);
+		this.button.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		button.setBounds(373, 198, 117, 23);
 		add(button);
 		
 		separator_1 = new JSeparator();
-		separator_1.setBounds(10, 280, 779, 2);
+		this.separator_1.setOrientation(SwingConstants.VERTICAL);
+		separator_1.setBounds(554, 76, 8, 202);
 		add(separator_1);
 		
 		lblAgregarLocalidad = new JLabel("Agregar Hostal: ");
-		lblAgregarLocalidad.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblAgregarLocalidad.setBounds(37, 307, 146, 17);
+		lblAgregarLocalidad.setFont(new Font("Segoe UI", Font.BOLD, 13));
+		lblAgregarLocalidad.setBounds(572, 76, 105, 17);
 		add(lblAgregarLocalidad);
 		
 		lblLocalidadDeOrigen = new JLabel("Localidad de origen:");
-		lblLocalidadDeOrigen.setBounds(37, 357, 101, 14);
+		this.lblLocalidadDeOrigen.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		lblLocalidadDeOrigen.setBounds(564, 111, 113, 14);
 		add(lblLocalidadDeOrigen);
 		
 		textField_5 = new JTextField();
+		this.textField_5.setFont(new Font("Segoe UI", Font.PLAIN, 11));
 		textField_5.setColumns(10);
-		textField_5.setBounds(148, 354, 98, 20);
+		textField_5.setBounds(684, 111, 98, 20);
 		add(textField_5);
-		
-		lblTipo = new JLabel("Tipo:");
-		lblTipo.setBounds(256, 357, 40, 14);
-		add(lblTipo);
 		
 		comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Camping", "Hostal", "Hotel"}));
 		comboBox.setSelectedIndex(0);
-		comboBox.setBounds(296, 354, 86, 20);
+		comboBox.setBounds(684, 136, 86, 20);
 		add(comboBox);
 		
 		button_1 = new JButton("Agregar hecho");
-		button_1.setBounds(672, 353, 117, 23);
+		this.button_1.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		button_1.setBounds(621, 199, 117, 23);
 		add(button_1);
 		
 		lblPrecio_1 = new JLabel("Precio: $");
-		lblPrecio_1.setBounds(412, 357, 46, 14);
+		this.lblPrecio_1.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		lblPrecio_1.setBounds(568, 164, 63, 14);
 		add(lblPrecio_1);
 		
 		textField_6 = new JTextField();
+		this.textField_6.setFont(new Font("Segoe UI", Font.PLAIN, 11));
 		textField_6.setColumns(10);
-		textField_6.setBounds(469, 354, 86, 20);
+		textField_6.setBounds(684, 161, 86, 20);
 		add(textField_6);
+		
+		this.lblNewLabel = new JLabel("Tipo: ");
+		this.lblNewLabel.setBounds(574, 139, 46, 14);
+		add(this.lblNewLabel);
 	}
+
+
 }
