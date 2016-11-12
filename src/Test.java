@@ -14,54 +14,31 @@ import java.awt.*;
 
 
 public class Test extends JFrame{
-	
-	private String[] datosOrigen = {"La serena", "Coquimbo", "Altovalsol", "Las Rojas"};
-	private String[] datosDestino = {"El penon", "Guachalalume", "Altovalsol", "Las Rojas"};
-	
-	private JTabbedPane tabbedPane;
-	private PanelUsuario panelUsuario;
-	private PanelExperto panelExperto;
-	private JLabel lblDistanciaEntreLas;
-	private JLabel lblOrigen;
-	private JPanel panelResultado;
-	private JLabel lblDestino;
-	private PanelViaje panelViajes;
-	private JList listaOrigen;
-	private JScrollPane scrollPane;
-	private JList listaDestino;
-	private JScrollPane scrollPane_1;
-	private JLabel lblOrigen_1;
-	private JLabel lblDestino_1;
-	private JLabel lblNewLabel;
-	private JSeparator separator;
-	
-	public Test() {
 
+
+	private Test() {
 		initComponents();
-
 	}
 
 	private void initComponents() {
 
-
 		getContentPane().setLayout(new BorderLayout(0, 0));
-		
-		tabbedPane = new JTabbedPane(JTabbedPane.BOTTOM);
+
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.BOTTOM);
 		getContentPane().add(tabbedPane, BorderLayout.CENTER);
-		
-		panelUsuario = new PanelUsuario();
+
+		PanelUsuario panelUsuario = new PanelUsuario();
 		tabbedPane.addTab("Distancia ciudades", null, panelUsuario, "Permite al usuario calcular la distancia entre las cuidades");
 		tabbedPane.setEnabledAt(0, true);
 
 			
-		panelViajes = new PanelViaje();
+		PanelViaje panelViajes = new PanelViaje();
 		tabbedPane.addTab("Planificador de viajes", null, panelViajes, null);
 		panelViajes.setLayout(null);
-		
-		panelExperto = new PanelExperto();
+
+		PanelExperto panelExperto = new PanelExperto();
 		tabbedPane.addTab("M\u00F3dulo experto", null, panelExperto, "Permite al usuario experto crear la base de conocimiento para el sistema experto");
 		panelExperto.setLayout(null);
-
 
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -100,6 +77,7 @@ public class Test extends JFrame{
 			System.out.println(" X = "+ solucion2.get("X"));
 		}
 		*/
+
 
 		// GUI
 
