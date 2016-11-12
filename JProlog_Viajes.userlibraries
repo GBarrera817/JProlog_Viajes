@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse-userlibraries>
-  <library name="jpl">
-    <archive path="C:/Program Files/swipl/lib/jpl.jar" />
+  <library name="jcalendar-1.4">
+    <archive path="D:/Workspace IntelliJ IDEA/JProlog_Viajes/lib/jcalendar-1.4.jar" />
+  </library>
+  <library name="jpl ">
+    <archive path="D:/Workspace IntelliJ IDEA/JProlog_Viajes/lib/jpl.jar" />
+  </library>
+  <library name="syntheticaAluOxide ">
+    <archive path="D:/Workspace IntelliJ IDEA/JProlog_Viajes/lib/syntheticaAluOxide.jar" />
+  </library>
+  <library name="synthetica ">
+    <archive path="D:/Workspace IntelliJ IDEA/JProlog_Viajes/lib/synthetica.jar" />
+  </library>
+  <library name="jcalendar-1.4">
+    <archive path="D:/Java/Libs/jcalendar-1.4/lib/jcalendar-1.4.jar" />
   </library>
   <library name="synthetica">
-    <archive path="D:/Workspace IntelliJ IDEA/GuionBajo/lib/synthetica.jar" />
+    <archive path="D:/Java/Libs/Synthetica LookAndFeel/synthetica.jar" />
   </library>
   <library name="syntheticaAluOxide">
-    <archive path="D:/Workspace IntelliJ IDEA/GuionBajo/lib/syntheticaAluOxide.jar" />
+    <archive path="D:/Java/Libs/Synthetica LookAndFeel/syntheticaAluOxide.jar" />
+  </library>
+  <library name="jpl">
+    <archive path="C:/Program Files/swipl/lib/jpl.jar" />
   </library>
 </eclipse-userlibraries>
 

@@ -3,11 +3,8 @@ package modelo; /**
  * Proyecto: JProlog_Viajes
  */
 
-
 import de.javasoft.plaf.synthetica.SyntheticaAluOxideLookAndFeel;
-import vista.PanelExperto;
-import vista.PanelViaje;
-import vista.PanelUsuario;
+import vista.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +12,7 @@ import java.awt.*;
 
 public class Test extends JFrame{
 
-
+	
 	private Test() {
 		initComponents();
 	}
