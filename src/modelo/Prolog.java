@@ -1,33 +1,68 @@
 package modelo;
 
+import java.util.Map;
+import org.jpl7.*;
+
 public class Prolog {
 	
 	private String ver = "SWI-PROLOG 7.2.3";
+	private String mapa;
+	private Query viajes;
+	private Query distancias;
 	
 	public Prolog(){}
 	
 	
-	public void cargarBaseConocimientos(String rutaArchivo){
+	public String cargarBaseConocimientoDistancias(String nombreArchivo){
 		
-		
+        String consult = "consult('"+nombreArchivo+"')";
+		distancias = new Query(consult);
+
+		return consult+ " " + (distancias.hasSolution() ? " => ConexiÃ³n correcta con "+ nombreArchivo : " => Fallado");
 	}
 	
-	public void borrarBaseConocimientos(String rutaArchivo){
+	public String cargarBaseConocimientoViajes(String nombreArchivo){
 		
+        String consult = "consult('"+nombreArchivo+"')";
+		viajes = new Query(consult);
 		
+		return consult+ " " + (viajes.hasSolution() ? " => ConexiÃ³n correcta con "+ nombreArchivo : " => Fallado");
+	}
+	
+	public String borrarBaseConocimientosDistancias(){
+		
+		distancias = null;
+		return ("Base de cocimientos distancias desconectada");
+	}
+	
+	public String borrarBaseConocimientosviajes(){
+		
+		viajes = null;
+		return ("Base de cocimientos viajes desconectada");
 	}
 	
 	public String consulta(String query){
-		
+		System.out.println("\nEstan conectadas las cuidades?\n");
+
+		Variable X = new Variable("X");
+
+		Query q1 = new Query( new Compound("distancia", new Term[]{ new Atom("tokyo"), new Atom("sydney"), X } ));
+
+		Map<String, Term> solucion1;
+
+		while(q1.hasMoreSolutions()){
+			solucion1 = q1.nextSolution();
+			System.out.println(" X = "+ solucion1.get("X"));
+		}
 		return "respuesta";
 	}
 	
 	/*Convierte una cadena de texto a constante Prolog*/
 	public String txtToProlog(String cadena){
 		
-		cadena = quitarEspacios(cadena);
-		cadena = reemplazaCaracteresEspeciales(cadena);
-		cadena = minusculas(cadena);
+		cadena = Parser.quitarEspacios(cadena);
+		cadena = Parser.reemplazaCaracteresEspeciales(cadena);
+		cadena = Parser.minusculas(cadena);
 		
 		return cadena;
 	}
@@ -35,8 +70,8 @@ public class Prolog {
 	/*Convierte una constante Prolog a cadena de texto*/
 	public String prologToTxt(String cadena){
 		
-		cadena = agregarEspacios(cadena);
-		cadena = mayusculas(cadena);
+		cadena = Parser.agregarEspacios(cadena);
+		cadena = Parser.mayusculas(cadena);
 		
 		return cadena;
 	}
@@ -45,50 +80,11 @@ public class Prolog {
 		return ver;
 	}
 	
-	public String quitarEspacios(String cadena){
-		cadena = cadena.trim();
-		cadena = cadena.replace(" ","_");
-		return cadena;
+	public String getMapa() {
+		return mapa;
 	}
-	
-	public String agregarEspacios(String cadena){
-		cadena = cadena.trim();
-		cadena = cadena.replace("_"," ");
-		return cadena;
-	}
-	
-	public String minusculas(String cadena){
-		cadena = cadena.toLowerCase();
-		return cadena;
-	}
-	
-	public String mayusculas(String cadena){
-		
-		char[] caracteres = cadena.toCharArray();
-		caracteres[0] = Character.toUpperCase(caracteres[0]);
-		
-		for (int i=1; i<caracteres.length; i++) {
-	       
-		    if (caracteres[i] == ' ')
-		        caracteres[i + 1] = Character.toUpperCase(caracteres[i + 1]);
-	    }
-		
-		return new String(caracteres);
-	}
-	
-	public String reemplazaCaracteresEspeciales(String input){
-		
-	    // Cadena de caracteres original a sustituir.
-	    String original = "áàäéèëíìïóòöúùuñÁÀÄÉÈËÍÌÏÓÒÖÚÙÜÑçÇ";
-	    // Cadena de caracteres ASCII que reemplazarán los originales.
-	    String ascii = "aaaeeeiiiooouuunAAAEEEIIIOOOUUUNcC";
-	    String output = input;
-	    
-	    for (int i=0; i<original.length(); i++) {
-	        // Reemplazamos los caracteres especiales.
-	        output = output.replace(original.charAt(i), ascii.charAt(i));
-	    }
-	    
-	    return output;
+
+	public void setMapa(String mapa) {
+		this.mapa = mapa;
 	}
 }
