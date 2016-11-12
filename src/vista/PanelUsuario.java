@@ -7,11 +7,10 @@ import java.awt.*;
  * Creado por Gabriela Barrera el 11-11-2016.
  * Proyecto: JProlog_Viajes
  */
+
 public class PanelUsuario extends JPanel{
 
-    private String[] datosOrigen = {"La serena", "Coquimbo", "Altovalsol", "Las Rojas"};
-    private String[] datosDestino = {"El penon", "Guachalalume", "Altovalsol", "Las Rojas"};
-
+	private String[] datos = new String[] {"Altovalsol", "Andacollo", "Coquimbo", "El Isl\u00F3n", "El pe\u00F1\u00F3n", "Guachalalume", "Guampulla", "Hurtado", "La Fundida", "La Serena", "Las Rojas", "Pan de Az\u00FAcar", "Pe\u00F1uelas", "Pichasca", "Placilla", "Samo Alto", "Vicu\u00F1a "};
 
     private JLabel lblDistanciaEntreLas;
     private JLabel lblOrigen;
@@ -28,6 +27,7 @@ public class PanelUsuario extends JPanel{
     private JSeparator separator_1;
     private JSeparator separator_2;
     private JButton btnCalcular;
+    private JLabel lblNewLabel_1;
 
     public PanelUsuario(){
         initComponents();
@@ -40,18 +40,18 @@ public class PanelUsuario extends JPanel{
 
         lblDistanciaEntreLas = new JLabel("Distancia entre las ciudades vecinas");
         lblDistanciaEntreLas.setHorizontalAlignment(SwingConstants.CENTER);
-        lblDistanciaEntreLas.setFont(new Font("Segoe UI", Font.BOLD, 18));
-        lblDistanciaEntreLas.setBounds(260, 26, 354, 25);
+        lblDistanciaEntreLas.setFont(new Font("Segoe UI", Font.BOLD, 20));
+        lblDistanciaEntreLas.setBounds(240, 119, 365, 25);
         add(lblDistanciaEntreLas);
 
         lblOrigen = new JLabel("Origen");
         lblOrigen.setHorizontalAlignment(SwingConstants.CENTER);
         lblOrigen.setFont(new Font("Segoe UI Emoji", Font.BOLD, 13));
-        lblOrigen.setBounds(169, 103, 60, 25);
+        lblOrigen.setBounds(181, 156, 60, 25);
         add(lblOrigen);
 
         panelResultado = new JPanel();
-        panelResultado.setBounds(323, 151, 193, 153);
+        panelResultado.setBounds(304, 204, 193, 153);
         add(panelResultado);
         panelResultado.setLayout(null);
 
@@ -93,11 +93,11 @@ public class PanelUsuario extends JPanel{
         lblDestino = new JLabel("Destino");
         lblDestino.setHorizontalAlignment(SwingConstants.CENTER);
         lblDestino.setFont(new Font("Segoe UI", Font.BOLD, 13));
-        lblDestino.setBounds(542, 102, 72, 25);
+        lblDestino.setBounds(551, 155, 72, 25);
         add(lblDestino);
 
         scrollPane = new JScrollPane();
-        scrollPane.setBounds(169, 138, 130, 224);
+        scrollPane.setBounds(150, 191, 130, 224);
         add(scrollPane);
 
         listaOrigen = new JList();
@@ -105,7 +105,7 @@ public class PanelUsuario extends JPanel{
         scrollPane.setViewportView(listaOrigen);
         listaOrigen.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         listaOrigen.setModel(new AbstractListModel() {
-            String[] values = new String[] {"Altovalsol", "Andacollo", "Coquimbo", "El Isl\u00F3n", "El pe\u00F1\u00F3n", "Guachalalume", "Guampulla", "Hurtado", "La Fundida", "La Serena", "Las Rojas", "Pan de Az\u00FAcar", "Pe\u00F1uelas", "Pichasca", "Placilla", "Samo Alto", "Vicu\u00F1a"};
+            String[] values = datos;
             public int getSize() {
                 return values.length;
             }
@@ -116,7 +116,7 @@ public class PanelUsuario extends JPanel{
         listaOrigen.setSelectedIndex(0);
 
         scrollPane_1 = new JScrollPane();
-        scrollPane_1.setBounds(542, 138, 132, 224);
+        scrollPane_1.setBounds(523, 191, 132, 224);
         add(scrollPane_1);
 
         listaDestino = new JList();
@@ -124,7 +124,7 @@ public class PanelUsuario extends JPanel{
         scrollPane_1.setViewportView(listaDestino);
         listaDestino.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         listaDestino.setModel(new AbstractListModel() {
-            String[] values = new String[] {"Altovalsol", "Andacollo", "Coquimbo", "El Isl\u00F3n", "El pe\u00F1\u00F3n", "Guachalalume", "Guampulla", "Hurtado", "La Fundida", "La Serena", "Las Rojas", "Pan de Az\u00FAcar", "Pe\u00F1uelas", "Pichasca", "Placilla", "Samo Alto", "Vicu\u00F1a"};
+            String[] values = datos;
             public int getSize() {
                 return values.length;
             }
@@ -135,7 +135,14 @@ public class PanelUsuario extends JPanel{
         listaDestino.setSelectedIndex(0);
     	
     	btnCalcular = new JButton("Calcular");
-    	btnCalcular.setBounds(376, 327, 89, 23);
+    	this.btnCalcular.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+    	btnCalcular.setBounds(357, 380, 89, 23);
     	add(btnCalcular);
+    	
+    	this.lblNewLabel_1 = new JLabel("New label");
+    	this.lblNewLabel_1.setIcon(new ImageIcon("D:\\Workspace IntelliJ IDEA\\JProlog_Viajes\\img\\banner_mapa.jpg"));
+    	this.lblNewLabel_1.setBounds(0, 0, 820, 108);
+    	add(this.lblNewLabel_1);
     }
+
 }

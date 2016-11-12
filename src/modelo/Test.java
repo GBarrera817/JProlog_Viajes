@@ -1,50 +1,12 @@
-package modelo; /**
+package modelo;
+
+/**
  * Creado por Gabriela Barrera el 09-11-2016.
  * Proyecto: JProlog_Viajes
  */
 
-import de.javasoft.plaf.synthetica.SyntheticaAluOxideLookAndFeel;
-import vista.*;
 
-import javax.swing.*;
-import java.awt.*;
-
-
-public class Test extends JFrame{
-
-	
-	private Test() {
-		initComponents();
-	}
-
-	private void initComponents() {
-
-		getContentPane().setLayout(new BorderLayout(0, 0));
-
-		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.BOTTOM);
-		getContentPane().add(tabbedPane, BorderLayout.CENTER);
-
-		PanelUsuario panelUsuario = new PanelUsuario();
-		tabbedPane.addTab("Distancia ciudades", null, panelUsuario, "Permite al usuario calcular la distancia entre las cuidades");
-		tabbedPane.setEnabledAt(0, true);
-
-			
-		PanelViaje panelViajes = new PanelViaje();
-		tabbedPane.addTab("Planificador de viajes", null, panelViajes, null);
-		panelViajes.setLayout(null);
-
-		PanelExperto panelExperto = new PanelExperto();
-		tabbedPane.addTab("M\u00F3dulo experto", null, panelExperto, "Permite al usuario experto crear la base de conocimiento para el sistema experto");
-		panelExperto.setLayout(null);
-
-
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("Planificaci\u00F3n IA");
-		setSize(820, 500);
-		setMaximumSize(new Dimension(820, 500));
-		setLocationRelativeTo(null);
-		setVisible(true);
-	}
+public class Test {
 
     public static void main(String[] args) {
 
@@ -74,17 +36,5 @@ public class Test extends JFrame{
 			System.out.println(" X = "+ solucion2.get("X"));
 		}
 		*/
-
-
-		// GUI
-
-        try {
-			UIManager.setLookAndFeel(SyntheticaAluOxideLookAndFeel.class.getName());
-			Test ventana = new Test();
-		} catch (final Exception e) {
-			e.printStackTrace();
-			System.exit(0);
-		}
-
     }
 }
