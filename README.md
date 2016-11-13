@@ -6,20 +6,20 @@ Creando mini Sistema Experto para la planificación de viajes con Prolog impleme
 ## Contexto
 
 Se crea un sistema que permite realizar planes de viajes y posteriormente hacer las consultas.
-La representacion de los destinos de viajes estan situados en la La Serena,Coquimbo, Chile.
+La representacion de los destinos de viajes estan situados en la La Serena, Coquimbo, Chile.
 En el proyecto existe una imagen de referencia para los posibles destinos a visitar
 
 ## Módulos
 	
 El planificador de viajes cuenta con los siguientes modulos:
-- Planificador de viajes: Este módulo se pueden hacer consulta sobre los posibles lugares a visitar, entre
+- __Planificador de viajes__: Este módulo se pueden hacer consulta sobre los posibles lugares a visitar, entre
 						  las variables se encuentran el destino, tipo de alojamiento y numero de dias. 
 						  Ademas se puede obtener información sobre el costo de los pasajes a determinada
 						  localidad.
 							
-- Distancia Vecinos: Este módulo comprueba si las localidades son vecinas (que estan conectadas directamente
+- __Distancia Vecinos__: Este módulo comprueba si las localidades son vecinas (que estan conectadas directamente
 					 o a lo más por un vecino). y entrega la distancia entre estas.
-- Experto: En este modulo se pueden agregar, editar y eliminar reglas para este sistema. 
+- __Experto__: En este modulo se pueden agregar, editar y eliminar reglas para este sistema. 
 
 ## Dependencias
 
