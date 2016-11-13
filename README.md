@@ -25,20 +25,20 @@ El planificador de viajes cuenta con los siguientes modulos:
 
 El planificador de viajes utiliza las siguientes librerias:
 
-- Conexión con Prolog-Java (SWI-Prolog): jpl.jar
-- Calendario (toedter): jcalendar-1.4.jar
-- Tema para la GUI (synthetica): synthetica.jar y syntheticaAluOxide.jar 
+- Conexión con Prolog-Java __(SWI-Prolog)__: jpl.jar
+- Calendario __(toedter)__: jcalendar-1.4.jar
+- Tema para la GUI __(synthetica)__: synthetica.jar y syntheticaAluOxide.jar 
 
 ## Preparando el ambiente de desarrollo Prolog-Java
 
 Se deben agregar las siguientes variables del sistema al Path de Windows:
 
-Variables de Prolog
+__Variables de Prolog__
 
 - C:\Program Files\swipl\bin
 - C:\Program Files\swipl\lib\jpl.jar
 
-Variables de Java
+__Variables de Java__
 
 - C:\Program Files\Java\jdk1.X.X_XX\bin
 - C:\Program Files\Java\jdk1.X.X_XX\lib\tools.jar
