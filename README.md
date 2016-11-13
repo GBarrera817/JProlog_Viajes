@@ -11,15 +11,15 @@ En el proyecto existe una imagen de referencia para los posibles destinos a visi
 
 ## Módulos
 	
-	El planificador de viajes cuenta con los siguientes modulos:
-	+ Planificador de viajes: Este módulo se pueden hacer consulta sobre los posibles lugares a visitar, entre las 
-							variables se encuentran el destino, tipo de alojamiento y numero de dias. Ademas se 
-							puede obtener información sobre el costo de los pasajes a determinada localidad.
+# El planificador de viajes cuenta con los siguientes modulos:
+- Planificador de viajes: Este módulo se pueden hacer consulta sobre los posibles lugares a visitar, entre
+						  las variables se encuentran el destino, tipo de alojamiento y numero de dias. 
+						  Ademas se puede obtener información sobre el costo de los pasajes a determinada
+						  localidad.
 							
-	+ Distancia Vecinos: Este módulo comprueba si las localidades son vecinas (que estan conectadas directamente
-						 o a lo más por un vecino).
-						 y entrega la distancia entre estas.
-	+ Experto: En este modulo se pueden agregar, editar y eliminar reglas para este sistema. 
+- Distancia Vecinos: Este módulo comprueba si las localidades son vecinas (que estan conectadas directamente
+					 o a lo más por un vecino). y entrega la distancia entre estas.
+- Experto: En este modulo se pueden agregar, editar y eliminar reglas para este sistema. 
 
 ## Dependencias
 
@@ -34,22 +34,22 @@ En el proyecto existe una imagen de referencia para los posibles destinos a visi
 
 Se deben agregar las siguientes variables del sistema al Path de Windows:
 
-	__ Variables de Prolog __
+	# Variables de Prolog
 
-	+ C:\Program Files\swipl\bin
-	+ C:\Program Files\swipl\lib\jpl.jar
+	- C:\Program Files\swipl\bin
+	- C:\Program Files\swipl\lib\jpl.jar
 
-	__ Variables de Java __
+	# Variables de Java
 
-	+ C:\Program Files\Java\jdk1.X.X_XX\bin
-	+ C:\Program Files\Java\jdk1.X.X_XX\lib\tools.jar
-	+ C:\Program Files\Java\jdk1.X.X_XX\jre\lib\rt.jar
+	- C:\Program Files\Java\jdk1.X.X_XX\bin
+	- C:\Program Files\Java\jdk1.X.X_XX\lib\tools.jar
+	- C:\Program Files\Java\jdk1.X.X_XX\jre\lib\rt.jar
 
 
 Se debe agregar además la siguiente variable tanto para Variables del Sistema como para Variables de usuario
 
-	 Nombre de la variable: SWI_HOME_DIR
-	 Valor de la variable:  C:\Program Files\swipl
+	 - Nombre de la variable: SWI_HOME_DIR
+	 - Valor de la variable:  C:\Program Files\swipl
 	 
 ## Funcionamiento del sistema
 
