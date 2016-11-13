@@ -11,7 +11,7 @@ En el proyecto existe una imagen de referencia para los posibles destinos a visi
 
 ## Módulos
 	
-# El planificador de viajes cuenta con los siguientes modulos:
+El planificador de viajes cuenta con los siguientes modulos:
 - Planificador de viajes: Este módulo se pueden hacer consulta sobre los posibles lugares a visitar, entre
 						  las variables se encuentran el destino, tipo de alojamiento y numero de dias. 
 						  Ademas se puede obtener información sobre el costo de los pasajes a determinada
@@ -23,33 +23,32 @@ En el proyecto existe una imagen de referencia para los posibles destinos a visi
 
 ## Dependencias
 
-	El planificador de viajes utiliza las siguientes librerias:
-	+ Conexión con Prolog-Java (SWI-Prolog): jpl.jar
-	+ Calendario (toedter): jcalendar-1.4.jar
-	+ Tema para la GUI (synthetica):  
-		+ synthetica.jar 
-		+ syntheticaAluOxide.jar 
+El planificador de viajes utiliza las siguientes librerias:
+
+- Conexión con Prolog-Java (SWI-Prolog): jpl.jar
+- Calendario (toedter): jcalendar-1.4.jar
+- Tema para la GUI (synthetica): synthetica.jar y syntheticaAluOxide.jar 
 
 ## Preparando el ambiente de desarrollo Prolog-Java
 
 Se deben agregar las siguientes variables del sistema al Path de Windows:
 
-	# Variables de Prolog
+Variables de Prolog
 
-	- C:\Program Files\swipl\bin
-	- C:\Program Files\swipl\lib\jpl.jar
+- C:\Program Files\swipl\bin
+- C:\Program Files\swipl\lib\jpl.jar
 
-	# Variables de Java
+Variables de Java
 
-	- C:\Program Files\Java\jdk1.X.X_XX\bin
-	- C:\Program Files\Java\jdk1.X.X_XX\lib\tools.jar
-	- C:\Program Files\Java\jdk1.X.X_XX\jre\lib\rt.jar
+- C:\Program Files\Java\jdk1.X.X_XX\bin
+- C:\Program Files\Java\jdk1.X.X_XX\lib\tools.jar
+- C:\Program Files\Java\jdk1.X.X_XX\jre\lib\rt.jar
 
 
 Se debe agregar además la siguiente variable tanto para Variables del Sistema como para Variables de usuario
 
-	 - Nombre de la variable: SWI_HOME_DIR
-	 - Valor de la variable:  C:\Program Files\swipl
+- Nombre de la variable: SWI_HOME_DIR
+- Valor de la variable:  C:\Program Files\swipl
 	 
 ## Funcionamiento del sistema
 
