@@ -10,7 +10,8 @@ La representacion de los destinos de viajes estan situados en la La Serena,Coqui
 En el proyecto existe una imagen de referencia para los posibles destinos a visitar
 
 ## Módulos
-
+	
+	El planificador de viajes cuenta con los siguientes modulos:
 	+ Planificador de viajes: Este módulo se pueden hacer consulta sobre los posibles lugares a visitar, entre las 
 							variables se encuentran el destino, tipo de alojamiento y numero de dias. Ademas se 
 							puede obtener información sobre el costo de los pasajes a determinada localidad.
@@ -22,6 +23,7 @@ En el proyecto existe una imagen de referencia para los posibles destinos a visi
 
 ## Dependencias
 
+	El planificador de viajes utiliza las siguientes librerias:
 	+ Conexión con Prolog-Java (SWI-Prolog): jpl.jar
 	+ Calendario (toedter): jcalendar-1.4.jar
 	+ Tema para la GUI (synthetica):  
@@ -32,12 +34,12 @@ En el proyecto existe una imagen de referencia para los posibles destinos a visi
 
 Se deben agregar las siguientes variables del sistema al Path de Windows:
 
-	__Variables de Prolog__
+	__ Variables de Prolog __
 
 	+ C:\Program Files\swipl\bin
 	+ C:\Program Files\swipl\lib\jpl.jar
 
-	__Variables de Java__
+	__ Variables de Java __
 
 	+ C:\Program Files\Java\jdk1.X.X_XX\bin
 	+ C:\Program Files\Java\jdk1.X.X_XX\lib\tools.jar
